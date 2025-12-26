@@ -1,0 +1,3 @@
+sql-test-kit
+psycopg2-binary
+pandas

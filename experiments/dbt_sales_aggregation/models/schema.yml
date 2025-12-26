@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: monthly_sales
+    description: Monthly aggregated revenue for 2023.

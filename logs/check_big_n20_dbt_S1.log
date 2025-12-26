@@ -1,0 +1,930 @@
+﻿2025-12-24T17:31:13.0352316+03:00 START tool=dbt scenario=S1 remaining=20
+14:31:18  Running with dbt=1.11.2
+14:31:19  Installing dbt-labs/dbt_utils
+14:31:19  Installed from version 1.3.0
+14:31:19  Updated version available: 1.3.3
+14:31:19  
+14:31:19  Updates available for packages: ['dbt-labs/dbt_utils']                 
+Update your versions in packages.yml, then run dbt deps
+14:31:25  Running with dbt=1.11.2
+14:31:26  Registered adapter: postgres=1.10.0
+14:31:27  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:31:27  
+14:31:27  Concurrency: 4 threads (target='dev')
+14:31:27  
+14:31:27  1 of 3 START seed file public.customers ........................................ [RUN]
+14:31:27  2 of 3 START seed file public.products ......................................... [RUN]
+14:31:27  3 of 3 START seed file public.sales ............................................ [RUN]
+14:31:29  2 of 3 OK loaded seed file public.products ..................................... [CREATE 500 in 1.35s]
+14:31:29  1 of 3 OK loaded seed file public.customers .................................... [CREATE 2000 in 1.96s]
+14:32:16  3 of 3 OK loaded seed file public.sales ........................................ [CREATE 50000 in 48.53s]
+14:32:16  
+14:32:16  Finished running 3 seeds in 0 hours 0 minutes and 48.84 seconds (48.84s).
+14:32:16  
+14:32:16  Completed successfully
+14:32:16  
+14:32:16  Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+14:32:21  Running with dbt=1.11.2
+14:32:21  Registered adapter: postgres=1.10.0
+14:32:22  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:32:22  
+14:32:22  Concurrency: 4 threads (target='dev')
+14:32:22  
+14:32:22  1 of 1 START sql view model public.monthly_sales ............................... [RUN]
+14:32:22  1 of 1 OK created sql view model public.monthly_sales .......................... [CREATE VIEW in 0.12s]
+14:32:22  
+14:32:22  Finished running 1 view model in 0 hours 0 minutes and 0.34 seconds (0.34s).
+14:32:22  
+14:32:22  Completed successfully
+14:32:22  
+14:32:22  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:32:27  Running with dbt=1.11.2
+14:32:27  Registered adapter: postgres=1.10.0
+14:32:28  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:32:28  
+14:32:28  Concurrency: 4 threads (target='dev')
+14:32:28  
+14:32:28  1 of 1 START test s1_monthly_sum_equals_total .................................. [RUN]
+14:32:28  1 of 1 PASS s1_monthly_sum_equals_total ........................................ [PASS in 0.13s]
+14:32:28  
+14:32:28  Finished running 1 test in 0 hours 0 minutes and 0.37 seconds (0.37s).
+14:32:28  
+14:32:28  Completed successfully
+14:32:28  
+14:32:28  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:32:34  Running with dbt=1.11.2
+14:32:35  Registered adapter: postgres=1.10.0
+14:32:35  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:32:35  
+14:32:35  Concurrency: 4 threads (target='dev')
+14:32:35  
+14:32:35  1 of 3 START seed file public.customers ........................................ [RUN]
+14:32:35  2 of 3 START seed file public.products ......................................... [RUN]
+14:32:35  3 of 3 START seed file public.sales ............................................ [RUN]
+14:32:37  2 of 3 OK loaded seed file public.products ..................................... [CREATE 500 in 1.25s]
+14:32:37  1 of 3 OK loaded seed file public.customers .................................... [CREATE 2000 in 1.70s]
+14:33:23  3 of 3 OK loaded seed file public.sales ........................................ [CREATE 50000 in 47.58s]
+14:33:23  
+14:33:23  Finished running 3 seeds in 0 hours 0 minutes and 47.77 seconds (47.77s).
+14:33:23  
+14:33:23  Completed successfully
+14:33:23  
+14:33:23  Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+14:33:28  Running with dbt=1.11.2
+14:33:28  Registered adapter: postgres=1.10.0
+14:33:29  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:33:29  
+14:33:29  Concurrency: 4 threads (target='dev')
+14:33:29  
+14:33:29  1 of 1 START sql view model public.monthly_sales ............................... [RUN]
+14:33:29  1 of 1 OK created sql view model public.monthly_sales .......................... [CREATE VIEW in 0.14s]
+14:33:29  
+14:33:29  Finished running 1 view model in 0 hours 0 minutes and 0.37 seconds (0.37s).
+14:33:29  
+14:33:29  Completed successfully
+14:33:29  
+14:33:29  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:33:35  Running with dbt=1.11.2
+14:33:35  Registered adapter: postgres=1.10.0
+14:33:36  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:33:36  
+14:33:36  Concurrency: 4 threads (target='dev')
+14:33:36  
+14:33:36  1 of 1 START test s1_monthly_sum_equals_total .................................. [RUN]
+14:33:36  1 of 1 PASS s1_monthly_sum_equals_total ........................................ [PASS in 0.12s]
+14:33:36  
+14:33:36  Finished running 1 test in 0 hours 0 minutes and 0.34 seconds (0.34s).
+14:33:36  
+14:33:36  Completed successfully
+14:33:36  
+14:33:36  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:33:42  Running with dbt=1.11.2
+14:33:42  Registered adapter: postgres=1.10.0
+14:33:43  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:33:43  
+14:33:43  Concurrency: 4 threads (target='dev')
+14:33:43  
+14:33:43  1 of 3 START seed file public.customers ........................................ [RUN]
+14:33:43  2 of 3 START seed file public.products ......................................... [RUN]
+14:33:43  3 of 3 START seed file public.sales ............................................ [RUN]
+14:33:45  2 of 3 OK loaded seed file public.products ..................................... [CREATE 500 in 1.62s]
+14:33:45  1 of 3 OK loaded seed file public.customers .................................... [CREATE 2000 in 1.92s]
+14:34:31  3 of 3 OK loaded seed file public.sales ........................................ [CREATE 50000 in 48.63s]
+14:34:31  
+14:34:31  Finished running 3 seeds in 0 hours 0 minutes and 48.87 seconds (48.87s).
+14:34:31  
+14:34:31  Completed successfully
+14:34:31  
+14:34:31  Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+14:34:37  Running with dbt=1.11.2
+14:34:37  Registered adapter: postgres=1.10.0
+14:34:38  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:34:38  
+14:34:38  Concurrency: 4 threads (target='dev')
+14:34:38  
+14:34:38  1 of 1 START sql view model public.monthly_sales ............................... [RUN]
+14:34:38  1 of 1 OK created sql view model public.monthly_sales .......................... [CREATE VIEW in 0.11s]
+14:34:38  
+14:34:38  Finished running 1 view model in 0 hours 0 minutes and 0.33 seconds (0.33s).
+14:34:38  
+14:34:38  Completed successfully
+14:34:38  
+14:34:38  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:34:43  Running with dbt=1.11.2
+14:34:44  Registered adapter: postgres=1.10.0
+14:34:44  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:34:44  
+14:34:44  Concurrency: 4 threads (target='dev')
+14:34:44  
+14:34:45  1 of 1 START test s1_monthly_sum_equals_total .................................. [RUN]
+14:34:45  1 of 1 PASS s1_monthly_sum_equals_total ........................................ [PASS in 0.11s]
+14:34:45  
+14:34:45  Finished running 1 test in 0 hours 0 minutes and 0.33 seconds (0.33s).
+14:34:45  
+14:34:45  Completed successfully
+14:34:45  
+14:34:45  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:34:51  Running with dbt=1.11.2
+14:34:51  Registered adapter: postgres=1.10.0
+14:34:52  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:34:52  
+14:34:52  Concurrency: 4 threads (target='dev')
+14:34:52  
+14:34:52  1 of 3 START seed file public.customers ........................................ [RUN]
+14:34:52  2 of 3 START seed file public.products ......................................... [RUN]
+14:34:52  3 of 3 START seed file public.sales ............................................ [RUN]
+14:34:54  2 of 3 OK loaded seed file public.products ..................................... [CREATE 500 in 1.46s]
+14:34:54  1 of 3 OK loaded seed file public.customers .................................... [CREATE 2000 in 1.74s]
+14:35:41  3 of 3 OK loaded seed file public.sales ........................................ [CREATE 50000 in 48.82s]
+14:35:41  
+14:35:41  Finished running 3 seeds in 0 hours 0 minutes and 49.04 seconds (49.04s).
+14:35:41  
+14:35:41  Completed successfully
+14:35:41  
+14:35:41  Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+14:35:46  Running with dbt=1.11.2
+14:35:46  Registered adapter: postgres=1.10.0
+14:35:47  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:35:47  
+14:35:47  Concurrency: 4 threads (target='dev')
+14:35:47  
+14:35:47  1 of 1 START sql view model public.monthly_sales ............................... [RUN]
+14:35:47  1 of 1 OK created sql view model public.monthly_sales .......................... [CREATE VIEW in 0.11s]
+14:35:47  
+14:35:47  Finished running 1 view model in 0 hours 0 minutes and 0.33 seconds (0.33s).
+14:35:47  
+14:35:47  Completed successfully
+14:35:47  
+14:35:47  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:35:52  Running with dbt=1.11.2
+14:35:52  Registered adapter: postgres=1.10.0
+14:35:53  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:35:53  
+14:35:53  Concurrency: 4 threads (target='dev')
+14:35:53  
+14:35:53  1 of 1 START test s1_monthly_sum_equals_total .................................. [RUN]
+14:35:53  1 of 1 PASS s1_monthly_sum_equals_total ........................................ [PASS in 0.11s]
+14:35:53  
+14:35:53  Finished running 1 test in 0 hours 0 minutes and 0.32 seconds (0.32s).
+14:35:53  
+14:35:53  Completed successfully
+14:35:53  
+14:35:53  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:35:59  Running with dbt=1.11.2
+14:35:59  Registered adapter: postgres=1.10.0
+14:36:00  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:36:00  
+14:36:00  Concurrency: 4 threads (target='dev')
+14:36:00  
+14:36:00  1 of 3 START seed file public.customers ........................................ [RUN]
+14:36:00  2 of 3 START seed file public.products ......................................... [RUN]
+14:36:00  3 of 3 START seed file public.sales ............................................ [RUN]
+14:36:01  2 of 3 OK loaded seed file public.products ..................................... [CREATE 500 in 1.42s]
+14:36:02  1 of 3 OK loaded seed file public.customers .................................... [CREATE 2000 in 1.87s]
+14:36:49  3 of 3 OK loaded seed file public.sales ........................................ [CREATE 50000 in 48.73s]
+14:36:49  
+14:36:49  Finished running 3 seeds in 0 hours 0 minutes and 48.98 seconds (48.98s).
+14:36:49  
+14:36:49  Completed successfully
+14:36:49  
+14:36:49  Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+14:36:55  Running with dbt=1.11.2
+14:36:55  Registered adapter: postgres=1.10.0
+14:36:56  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:36:56  
+14:36:56  Concurrency: 4 threads (target='dev')
+14:36:56  
+14:36:56  1 of 1 START sql view model public.monthly_sales ............................... [RUN]
+14:36:56  1 of 1 OK created sql view model public.monthly_sales .......................... [CREATE VIEW in 0.12s]
+14:36:56  
+14:36:56  Finished running 1 view model in 0 hours 0 minutes and 0.33 seconds (0.33s).
+14:36:56  
+14:36:56  Completed successfully
+14:36:56  
+14:36:56  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:37:03  Running with dbt=1.11.2
+14:37:03  Registered adapter: postgres=1.10.0
+14:37:04  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:37:04  
+14:37:04  Concurrency: 4 threads (target='dev')
+14:37:04  
+14:37:04  1 of 1 START test s1_monthly_sum_equals_total .................................. [RUN]
+14:37:04  1 of 1 PASS s1_monthly_sum_equals_total ........................................ [PASS in 0.11s]
+14:37:04  
+14:37:04  Finished running 1 test in 0 hours 0 minutes and 0.33 seconds (0.33s).
+14:37:04  
+14:37:04  Completed successfully
+14:37:04  
+14:37:04  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:37:12  Running with dbt=1.11.2
+14:37:12  Registered adapter: postgres=1.10.0
+14:37:13  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:37:13  
+14:37:13  Concurrency: 4 threads (target='dev')
+14:37:13  
+14:37:13  1 of 3 START seed file public.customers ........................................ [RUN]
+14:37:13  2 of 3 START seed file public.products ......................................... [RUN]
+14:37:13  3 of 3 START seed file public.sales ............................................ [RUN]
+14:37:14  2 of 3 OK loaded seed file public.products ..................................... [CREATE 500 in 1.38s]
+14:37:15  1 of 3 OK loaded seed file public.customers .................................... [CREATE 2000 in 1.94s]
+14:38:00  3 of 3 OK loaded seed file public.sales ........................................ [CREATE 50000 in 46.96s]
+14:38:00  
+14:38:00  Finished running 3 seeds in 0 hours 0 minutes and 47.20 seconds (47.20s).
+14:38:00  
+14:38:00  Completed successfully
+14:38:00  
+14:38:00  Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+14:38:04  Running with dbt=1.11.2
+14:38:05  Registered adapter: postgres=1.10.0
+14:38:05  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:38:05  
+14:38:05  Concurrency: 4 threads (target='dev')
+14:38:05  
+14:38:05  1 of 1 START sql view model public.monthly_sales ............................... [RUN]
+14:38:06  1 of 1 OK created sql view model public.monthly_sales .......................... [CREATE VIEW in 0.11s]
+14:38:06  
+14:38:06  Finished running 1 view model in 0 hours 0 minutes and 0.34 seconds (0.34s).
+14:38:06  
+14:38:06  Completed successfully
+14:38:06  
+14:38:06  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:38:10  Running with dbt=1.11.2
+14:38:10  Registered adapter: postgres=1.10.0
+14:38:11  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:38:11  
+14:38:11  Concurrency: 4 threads (target='dev')
+14:38:11  
+14:38:11  1 of 1 START test s1_monthly_sum_equals_total .................................. [RUN]
+14:38:11  1 of 1 PASS s1_monthly_sum_equals_total ........................................ [PASS in 0.11s]
+14:38:11  
+14:38:11  Finished running 1 test in 0 hours 0 minutes and 0.29 seconds (0.29s).
+14:38:11  
+14:38:11  Completed successfully
+14:38:11  
+14:38:11  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:38:17  Running with dbt=1.11.2
+14:38:17  Registered adapter: postgres=1.10.0
+14:38:18  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:38:18  
+14:38:18  Concurrency: 4 threads (target='dev')
+14:38:18  
+14:38:18  1 of 3 START seed file public.customers ........................................ [RUN]
+14:38:18  2 of 3 START seed file public.products ......................................... [RUN]
+14:38:18  3 of 3 START seed file public.sales ............................................ [RUN]
+14:38:20  2 of 3 OK loaded seed file public.products ..................................... [CREATE 500 in 1.35s]
+14:38:20  1 of 3 OK loaded seed file public.customers .................................... [CREATE 2000 in 2.23s]
+14:39:04  3 of 3 OK loaded seed file public.sales ........................................ [CREATE 50000 in 46.05s]
+14:39:04  
+14:39:04  Finished running 3 seeds in 0 hours 0 minutes and 46.25 seconds (46.25s).
+14:39:04  
+14:39:04  Completed successfully
+14:39:04  
+14:39:04  Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+14:39:09  Running with dbt=1.11.2
+14:39:09  Registered adapter: postgres=1.10.0
+14:39:10  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:39:10  
+14:39:10  Concurrency: 4 threads (target='dev')
+14:39:10  
+14:39:10  1 of 1 START sql view model public.monthly_sales ............................... [RUN]
+14:39:10  1 of 1 OK created sql view model public.monthly_sales .......................... [CREATE VIEW in 0.11s]
+14:39:10  
+14:39:10  Finished running 1 view model in 0 hours 0 minutes and 0.35 seconds (0.35s).
+14:39:10  
+14:39:10  Completed successfully
+14:39:10  
+14:39:10  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:39:15  Running with dbt=1.11.2
+14:39:15  Registered adapter: postgres=1.10.0
+14:39:15  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:39:15  
+14:39:15  Concurrency: 4 threads (target='dev')
+14:39:15  
+14:39:16  1 of 1 START test s1_monthly_sum_equals_total .................................. [RUN]
+14:39:16  1 of 1 PASS s1_monthly_sum_equals_total ........................................ [PASS in 0.10s]
+14:39:16  
+14:39:16  Finished running 1 test in 0 hours 0 minutes and 0.26 seconds (0.26s).
+14:39:16  
+14:39:16  Completed successfully
+14:39:16  
+14:39:16  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:39:21  Running with dbt=1.11.2
+14:39:21  Registered adapter: postgres=1.10.0
+14:39:21  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:39:21  
+14:39:21  Concurrency: 4 threads (target='dev')
+14:39:21  
+14:39:22  1 of 3 START seed file public.customers ........................................ [RUN]
+14:39:22  2 of 3 START seed file public.products ......................................... [RUN]
+14:39:22  3 of 3 START seed file public.sales ............................................ [RUN]
+14:39:23  2 of 3 OK loaded seed file public.products ..................................... [CREATE 500 in 1.15s]
+14:39:23  1 of 3 OK loaded seed file public.customers .................................... [CREATE 2000 in 1.52s]
+14:40:05  3 of 3 OK loaded seed file public.sales ........................................ [CREATE 50000 in 43.67s]
+14:40:05  
+14:40:05  Finished running 3 seeds in 0 hours 0 minutes and 43.90 seconds (43.90s).
+14:40:05  
+14:40:05  Completed successfully
+14:40:05  
+14:40:05  Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+14:40:10  Running with dbt=1.11.2
+14:40:10  Registered adapter: postgres=1.10.0
+14:40:11  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:40:11  
+14:40:11  Concurrency: 4 threads (target='dev')
+14:40:11  
+14:40:11  1 of 1 START sql view model public.monthly_sales ............................... [RUN]
+14:40:11  1 of 1 OK created sql view model public.monthly_sales .......................... [CREATE VIEW in 0.13s]
+14:40:11  
+14:40:11  Finished running 1 view model in 0 hours 0 minutes and 0.39 seconds (0.39s).
+14:40:11  
+14:40:11  Completed successfully
+14:40:11  
+14:40:11  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:40:16  Running with dbt=1.11.2
+14:40:16  Registered adapter: postgres=1.10.0
+14:40:17  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:40:17  
+14:40:17  Concurrency: 4 threads (target='dev')
+14:40:17  
+14:40:17  1 of 1 START test s1_monthly_sum_equals_total .................................. [RUN]
+14:40:17  1 of 1 PASS s1_monthly_sum_equals_total ........................................ [PASS in 0.11s]
+14:40:17  
+14:40:17  Finished running 1 test in 0 hours 0 minutes and 0.37 seconds (0.37s).
+14:40:17  
+14:40:17  Completed successfully
+14:40:17  
+14:40:17  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:40:22  Running with dbt=1.11.2
+14:40:23  Registered adapter: postgres=1.10.0
+14:40:23  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:40:23  
+14:40:23  Concurrency: 4 threads (target='dev')
+14:40:23  
+14:40:23  1 of 3 START seed file public.customers ........................................ [RUN]
+14:40:23  2 of 3 START seed file public.products ......................................... [RUN]
+14:40:23  3 of 3 START seed file public.sales ............................................ [RUN]
+14:40:25  2 of 3 OK loaded seed file public.products ..................................... [CREATE 500 in 1.37s]
+14:40:25  1 of 3 OK loaded seed file public.customers .................................... [CREATE 2000 in 1.90s]
+14:41:11  3 of 3 OK loaded seed file public.sales ........................................ [CREATE 50000 in 47.51s]
+14:41:11  
+14:41:11  Finished running 3 seeds in 0 hours 0 minutes and 47.79 seconds (47.79s).
+14:41:11  
+14:41:11  Completed successfully
+14:41:11  
+14:41:11  Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+14:41:16  Running with dbt=1.11.2
+14:41:16  Registered adapter: postgres=1.10.0
+14:41:17  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:41:17  
+14:41:17  Concurrency: 4 threads (target='dev')
+14:41:17  
+14:41:17  1 of 1 START sql view model public.monthly_sales ............................... [RUN]
+14:41:17  1 of 1 OK created sql view model public.monthly_sales .......................... [CREATE VIEW in 0.11s]
+14:41:17  
+14:41:17  Finished running 1 view model in 0 hours 0 minutes and 0.38 seconds (0.38s).
+14:41:17  
+14:41:17  Completed successfully
+14:41:17  
+14:41:17  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:41:23  Running with dbt=1.11.2
+14:41:24  Registered adapter: postgres=1.10.0
+14:41:24  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:41:24  
+14:41:24  Concurrency: 4 threads (target='dev')
+14:41:24  
+14:41:25  1 of 1 START test s1_monthly_sum_equals_total .................................. [RUN]
+14:41:25  1 of 1 PASS s1_monthly_sum_equals_total ........................................ [PASS in 0.14s]
+14:41:25  
+14:41:25  Finished running 1 test in 0 hours 0 minutes and 0.38 seconds (0.38s).
+14:41:25  
+14:41:25  Completed successfully
+14:41:25  
+14:41:25  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:41:31  Running with dbt=1.11.2
+14:41:31  Registered adapter: postgres=1.10.0
+14:41:32  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:41:32  
+14:41:32  Concurrency: 4 threads (target='dev')
+14:41:32  
+14:41:32  1 of 3 START seed file public.customers ........................................ [RUN]
+14:41:32  2 of 3 START seed file public.products ......................................... [RUN]
+14:41:32  3 of 3 START seed file public.sales ............................................ [RUN]
+14:41:33  2 of 3 OK loaded seed file public.products ..................................... [CREATE 500 in 1.35s]
+14:41:34  1 of 3 OK loaded seed file public.customers .................................... [CREATE 2000 in 1.67s]
+14:42:19  3 of 3 OK loaded seed file public.sales ........................................ [CREATE 50000 in 47.19s]
+14:42:19  
+14:42:19  Finished running 3 seeds in 0 hours 0 minutes and 47.46 seconds (47.46s).
+14:42:19  
+14:42:19  Completed successfully
+14:42:19  
+14:42:19  Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+14:42:24  Running with dbt=1.11.2
+14:42:25  Registered adapter: postgres=1.10.0
+14:42:26  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:42:26  
+14:42:26  Concurrency: 4 threads (target='dev')
+14:42:26  
+14:42:26  1 of 1 START sql view model public.monthly_sales ............................... [RUN]
+14:42:26  1 of 1 OK created sql view model public.monthly_sales .......................... [CREATE VIEW in 0.14s]
+14:42:26  
+14:42:26  Finished running 1 view model in 0 hours 0 minutes and 0.40 seconds (0.40s).
+14:42:26  
+14:42:26  Completed successfully
+14:42:26  
+14:42:26  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:42:31  Running with dbt=1.11.2
+14:42:31  Registered adapter: postgres=1.10.0
+14:42:32  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:42:32  
+14:42:32  Concurrency: 4 threads (target='dev')
+14:42:32  
+14:42:32  1 of 1 START test s1_monthly_sum_equals_total .................................. [RUN]
+14:42:32  1 of 1 PASS s1_monthly_sum_equals_total ........................................ [PASS in 0.12s]
+14:42:32  
+14:42:32  Finished running 1 test in 0 hours 0 minutes and 0.29 seconds (0.29s).
+14:42:32  
+14:42:32  Completed successfully
+14:42:32  
+14:42:32  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:42:36  Running with dbt=1.11.2
+14:42:36  Registered adapter: postgres=1.10.0
+14:42:37  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:42:37  
+14:42:37  Concurrency: 4 threads (target='dev')
+14:42:37  
+14:42:37  1 of 3 START seed file public.customers ........................................ [RUN]
+14:42:37  2 of 3 START seed file public.products ......................................... [RUN]
+14:42:37  3 of 3 START seed file public.sales ............................................ [RUN]
+14:42:39  2 of 3 OK loaded seed file public.products ..................................... [CREATE 500 in 1.68s]
+14:42:39  1 of 3 OK loaded seed file public.customers .................................... [CREATE 2000 in 1.70s]
+14:43:19  3 of 3 OK loaded seed file public.sales ........................................ [CREATE 50000 in 41.56s]
+14:43:19  
+14:43:19  Finished running 3 seeds in 0 hours 0 minutes and 41.76 seconds (41.76s).
+14:43:19  
+14:43:19  Completed successfully
+14:43:19  
+14:43:19  Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+14:43:23  Running with dbt=1.11.2
+14:43:24  Registered adapter: postgres=1.10.0
+14:43:24  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:43:24  
+14:43:24  Concurrency: 4 threads (target='dev')
+14:43:24  
+14:43:25  1 of 1 START sql view model public.monthly_sales ............................... [RUN]
+14:43:25  1 of 1 OK created sql view model public.monthly_sales .......................... [CREATE VIEW in 0.12s]
+14:43:25  
+14:43:25  Finished running 1 view model in 0 hours 0 minutes and 0.36 seconds (0.36s).
+14:43:25  
+14:43:25  Completed successfully
+14:43:25  
+14:43:25  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:43:29  Running with dbt=1.11.2
+14:43:30  Registered adapter: postgres=1.10.0
+14:43:30  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:43:30  
+14:43:30  Concurrency: 4 threads (target='dev')
+14:43:30  
+14:43:30  1 of 1 START test s1_monthly_sum_equals_total .................................. [RUN]
+14:43:31  1 of 1 PASS s1_monthly_sum_equals_total ........................................ [PASS in 0.12s]
+14:43:31  
+14:43:31  Finished running 1 test in 0 hours 0 minutes and 0.30 seconds (0.30s).
+14:43:31  
+14:43:31  Completed successfully
+14:43:31  
+14:43:31  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:43:36  Running with dbt=1.11.2
+14:43:37  Registered adapter: postgres=1.10.0
+14:43:37  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:43:37  
+14:43:37  Concurrency: 4 threads (target='dev')
+14:43:37  
+14:43:38  1 of 3 START seed file public.customers ........................................ [RUN]
+14:43:38  2 of 3 START seed file public.products ......................................... [RUN]
+14:43:38  3 of 3 START seed file public.sales ............................................ [RUN]
+14:43:39  2 of 3 OK loaded seed file public.products ..................................... [CREATE 500 in 1.40s]
+14:43:40  1 of 3 OK loaded seed file public.customers .................................... [CREATE 2000 in 2.24s]
+14:44:27  3 of 3 OK loaded seed file public.sales ........................................ [CREATE 50000 in 49.72s]
+14:44:27  
+14:44:27  Finished running 3 seeds in 0 hours 0 minutes and 49.96 seconds (49.96s).
+14:44:27  
+14:44:27  Completed successfully
+14:44:27  
+14:44:27  Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+14:44:33  Running with dbt=1.11.2
+14:44:34  Registered adapter: postgres=1.10.0
+14:44:34  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:44:34  
+14:44:34  Concurrency: 4 threads (target='dev')
+14:44:34  
+14:44:35  1 of 1 START sql view model public.monthly_sales ............................... [RUN]
+14:44:35  1 of 1 OK created sql view model public.monthly_sales .......................... [CREATE VIEW in 0.12s]
+14:44:35  
+14:44:35  Finished running 1 view model in 0 hours 0 minutes and 0.35 seconds (0.35s).
+14:44:35  
+14:44:35  Completed successfully
+14:44:35  
+14:44:35  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:44:39  Running with dbt=1.11.2
+14:44:40  Registered adapter: postgres=1.10.0
+14:44:40  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:44:40  
+14:44:40  Concurrency: 4 threads (target='dev')
+14:44:40  
+14:44:40  1 of 1 START test s1_monthly_sum_equals_total .................................. [RUN]
+14:44:40  1 of 1 PASS s1_monthly_sum_equals_total ........................................ [PASS in 0.10s]
+14:44:40  
+14:44:40  Finished running 1 test in 0 hours 0 minutes and 0.28 seconds (0.28s).
+14:44:40  
+14:44:40  Completed successfully
+14:44:40  
+14:44:40  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:44:46  Running with dbt=1.11.2
+14:44:47  Registered adapter: postgres=1.10.0
+14:44:47  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:44:47  
+14:44:47  Concurrency: 4 threads (target='dev')
+14:44:47  
+14:44:48  1 of 3 START seed file public.customers ........................................ [RUN]
+14:44:48  2 of 3 START seed file public.products ......................................... [RUN]
+14:44:48  3 of 3 START seed file public.sales ............................................ [RUN]
+14:44:49  2 of 3 OK loaded seed file public.products ..................................... [CREATE 500 in 1.54s]
+14:44:50  1 of 3 OK loaded seed file public.customers .................................... [CREATE 2000 in 2.08s]
+14:45:36  3 of 3 OK loaded seed file public.sales ........................................ [CREATE 50000 in 48.55s]
+14:45:36  
+14:45:36  Finished running 3 seeds in 0 hours 0 minutes and 48.81 seconds (48.81s).
+14:45:36  
+14:45:36  Completed successfully
+14:45:36  
+14:45:36  Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+14:45:41  Running with dbt=1.11.2
+14:45:41  Registered adapter: postgres=1.10.0
+14:45:42  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:45:42  
+14:45:42  Concurrency: 4 threads (target='dev')
+14:45:42  
+14:45:42  1 of 1 START sql view model public.monthly_sales ............................... [RUN]
+14:45:42  1 of 1 OK created sql view model public.monthly_sales .......................... [CREATE VIEW in 0.12s]
+14:45:42  
+14:45:42  Finished running 1 view model in 0 hours 0 minutes and 0.34 seconds (0.34s).
+14:45:42  
+14:45:42  Completed successfully
+14:45:42  
+14:45:42  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:45:47  Running with dbt=1.11.2
+14:45:47  Registered adapter: postgres=1.10.0
+14:45:48  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:45:48  
+14:45:48  Concurrency: 4 threads (target='dev')
+14:45:48  
+14:45:48  1 of 1 START test s1_monthly_sum_equals_total .................................. [RUN]
+14:45:48  1 of 1 PASS s1_monthly_sum_equals_total ........................................ [PASS in 0.12s]
+14:45:48  
+14:45:48  Finished running 1 test in 0 hours 0 minutes and 0.37 seconds (0.37s).
+14:45:48  
+14:45:48  Completed successfully
+14:45:48  
+14:45:48  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:45:54  Running with dbt=1.11.2
+14:45:55  Registered adapter: postgres=1.10.0
+14:45:56  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:45:56  
+14:45:56  Concurrency: 4 threads (target='dev')
+14:45:56  
+14:45:56  1 of 3 START seed file public.customers ........................................ [RUN]
+14:45:56  2 of 3 START seed file public.products ......................................... [RUN]
+14:45:56  3 of 3 START seed file public.sales ............................................ [RUN]
+14:45:57  2 of 3 OK loaded seed file public.products ..................................... [CREATE 500 in 1.49s]
+14:45:58  1 of 3 OK loaded seed file public.customers .................................... [CREATE 2000 in 2.02s]
+14:46:45  3 of 3 OK loaded seed file public.sales ........................................ [CREATE 50000 in 48.97s]
+14:46:45  
+14:46:45  Finished running 3 seeds in 0 hours 0 minutes and 49.19 seconds (49.19s).
+14:46:45  
+14:46:45  Completed successfully
+14:46:45  
+14:46:45  Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+14:46:50  Running with dbt=1.11.2
+14:46:50  Registered adapter: postgres=1.10.0
+14:46:51  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:46:51  
+14:46:51  Concurrency: 4 threads (target='dev')
+14:46:51  
+14:46:51  1 of 1 START sql view model public.monthly_sales ............................... [RUN]
+14:46:51  1 of 1 OK created sql view model public.monthly_sales .......................... [CREATE VIEW in 0.15s]
+14:46:51  
+14:46:51  Finished running 1 view model in 0 hours 0 minutes and 0.45 seconds (0.45s).
+14:46:51  
+14:46:51  Completed successfully
+14:46:51  
+14:46:51  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:46:56  Running with dbt=1.11.2
+14:46:57  Registered adapter: postgres=1.10.0
+14:46:58  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:46:58  
+14:46:58  Concurrency: 4 threads (target='dev')
+14:46:58  
+14:46:58  1 of 1 START test s1_monthly_sum_equals_total .................................. [RUN]
+14:46:58  1 of 1 PASS s1_monthly_sum_equals_total ........................................ [PASS in 0.13s]
+14:46:58  
+14:46:58  Finished running 1 test in 0 hours 0 minutes and 0.37 seconds (0.37s).
+14:46:58  
+14:46:58  Completed successfully
+14:46:58  
+14:46:58  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:47:04  Running with dbt=1.11.2
+14:47:04  Registered adapter: postgres=1.10.0
+14:47:05  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:47:05  
+14:47:05  Concurrency: 4 threads (target='dev')
+14:47:05  
+14:47:05  1 of 3 START seed file public.customers ........................................ [RUN]
+14:47:05  2 of 3 START seed file public.products ......................................... [RUN]
+14:47:05  3 of 3 START seed file public.sales ............................................ [RUN]
+14:47:07  2 of 3 OK loaded seed file public.products ..................................... [CREATE 500 in 1.56s]
+14:47:07  1 of 3 OK loaded seed file public.customers .................................... [CREATE 2000 in 1.93s]
+14:47:56  3 of 3 OK loaded seed file public.sales ........................................ [CREATE 50000 in 51.01s]
+14:47:56  
+14:47:56  Finished running 3 seeds in 0 hours 0 minutes and 51.23 seconds (51.23s).
+14:47:56  
+14:47:56  Completed successfully
+14:47:56  
+14:47:56  Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+14:48:01  Running with dbt=1.11.2
+14:48:02  Registered adapter: postgres=1.10.0
+14:48:03  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:48:03  
+14:48:03  Concurrency: 4 threads (target='dev')
+14:48:03  
+14:48:03  1 of 1 START sql view model public.monthly_sales ............................... [RUN]
+14:48:03  1 of 1 OK created sql view model public.monthly_sales .......................... [CREATE VIEW in 0.16s]
+14:48:03  
+14:48:03  Finished running 1 view model in 0 hours 0 minutes and 0.40 seconds (0.40s).
+14:48:03  
+14:48:03  Completed successfully
+14:48:03  
+14:48:03  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:48:08  Running with dbt=1.11.2
+14:48:08  Registered adapter: postgres=1.10.0
+14:48:09  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:48:09  
+14:48:09  Concurrency: 4 threads (target='dev')
+14:48:09  
+14:48:09  1 of 1 START test s1_monthly_sum_equals_total .................................. [RUN]
+14:48:09  1 of 1 PASS s1_monthly_sum_equals_total ........................................ [PASS in 0.12s]
+14:48:09  
+14:48:09  Finished running 1 test in 0 hours 0 minutes and 0.34 seconds (0.34s).
+14:48:09  
+14:48:09  Completed successfully
+14:48:09  
+14:48:09  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:48:15  Running with dbt=1.11.2
+14:48:16  Registered adapter: postgres=1.10.0
+14:48:16  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:48:16  
+14:48:16  Concurrency: 4 threads (target='dev')
+14:48:16  
+14:48:17  1 of 3 START seed file public.customers ........................................ [RUN]
+14:48:17  2 of 3 START seed file public.products ......................................... [RUN]
+14:48:17  3 of 3 START seed file public.sales ............................................ [RUN]
+14:48:18  2 of 3 OK loaded seed file public.products ..................................... [CREATE 500 in 1.71s]
+14:48:18  1 of 3 OK loaded seed file public.customers .................................... [CREATE 2000 in 1.73s]
+14:49:05  3 of 3 OK loaded seed file public.sales ........................................ [CREATE 50000 in 48.70s]
+14:49:05  
+14:49:05  Finished running 3 seeds in 0 hours 0 minutes and 48.92 seconds (48.92s).
+14:49:05  
+14:49:05  Completed successfully
+14:49:05  
+14:49:05  Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+14:49:10  Running with dbt=1.11.2
+14:49:10  Registered adapter: postgres=1.10.0
+14:49:11  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:49:11  
+14:49:11  Concurrency: 4 threads (target='dev')
+14:49:11  
+14:49:11  1 of 1 START sql view model public.monthly_sales ............................... [RUN]
+14:49:11  1 of 1 OK created sql view model public.monthly_sales .......................... [CREATE VIEW in 0.11s]
+14:49:11  
+14:49:11  Finished running 1 view model in 0 hours 0 minutes and 0.41 seconds (0.41s).
+14:49:12  
+14:49:12  Completed successfully
+14:49:12  
+14:49:12  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:49:16  Running with dbt=1.11.2
+14:49:16  Registered adapter: postgres=1.10.0
+14:49:17  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:49:17  
+14:49:17  Concurrency: 4 threads (target='dev')
+14:49:17  
+14:49:17  1 of 1 START test s1_monthly_sum_equals_total .................................. [RUN]
+14:49:18  1 of 1 PASS s1_monthly_sum_equals_total ........................................ [PASS in 0.11s]
+14:49:18  
+14:49:18  Finished running 1 test in 0 hours 0 minutes and 0.31 seconds (0.31s).
+14:49:18  
+14:49:18  Completed successfully
+14:49:18  
+14:49:18  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:49:23  Running with dbt=1.11.2
+14:49:24  Registered adapter: postgres=1.10.0
+14:49:24  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:49:24  
+14:49:24  Concurrency: 4 threads (target='dev')
+14:49:24  
+14:49:24  1 of 3 START seed file public.customers ........................................ [RUN]
+14:49:24  2 of 3 START seed file public.products ......................................... [RUN]
+14:49:24  3 of 3 START seed file public.sales ............................................ [RUN]
+14:49:26  2 of 3 OK loaded seed file public.products ..................................... [CREATE 500 in 1.61s]
+14:49:27  1 of 3 OK loaded seed file public.customers .................................... [CREATE 2000 in 2.07s]
+14:50:14  3 of 3 OK loaded seed file public.sales ........................................ [CREATE 50000 in 49.27s]
+14:50:14  
+14:50:14  Finished running 3 seeds in 0 hours 0 minutes and 49.51 seconds (49.51s).
+14:50:14  
+14:50:14  Completed successfully
+14:50:14  
+14:50:14  Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+14:50:19  Running with dbt=1.11.2
+14:50:19  Registered adapter: postgres=1.10.0
+14:50:20  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:50:20  
+14:50:20  Concurrency: 4 threads (target='dev')
+14:50:20  
+14:50:20  1 of 1 START sql view model public.monthly_sales ............................... [RUN]
+14:50:20  1 of 1 OK created sql view model public.monthly_sales .......................... [CREATE VIEW in 0.13s]
+14:50:20  
+14:50:20  Finished running 1 view model in 0 hours 0 minutes and 0.37 seconds (0.37s).
+14:50:20  
+14:50:20  Completed successfully
+14:50:20  
+14:50:20  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:50:25  Running with dbt=1.11.2
+14:50:25  Registered adapter: postgres=1.10.0
+14:50:26  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:50:26  
+14:50:26  Concurrency: 4 threads (target='dev')
+14:50:26  
+14:50:26  1 of 1 START test s1_monthly_sum_equals_total .................................. [RUN]
+14:50:26  1 of 1 PASS s1_monthly_sum_equals_total ........................................ [PASS in 0.11s]
+14:50:26  
+14:50:26  Finished running 1 test in 0 hours 0 minutes and 0.31 seconds (0.31s).
+14:50:26  
+14:50:26  Completed successfully
+14:50:26  
+14:50:26  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:50:32  Running with dbt=1.11.2
+14:50:32  Registered adapter: postgres=1.10.0
+14:50:33  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:50:33  
+14:50:33  Concurrency: 4 threads (target='dev')
+14:50:33  
+14:50:33  1 of 3 START seed file public.customers ........................................ [RUN]
+14:50:33  2 of 3 START seed file public.products ......................................... [RUN]
+14:50:33  3 of 3 START seed file public.sales ............................................ [RUN]
+14:50:35  2 of 3 OK loaded seed file public.products ..................................... [CREATE 500 in 1.32s]
+14:50:35  1 of 3 OK loaded seed file public.customers .................................... [CREATE 2000 in 2.03s]
+14:51:22  3 of 3 OK loaded seed file public.sales ........................................ [CREATE 50000 in 48.62s]
+14:51:22  
+14:51:22  Finished running 3 seeds in 0 hours 0 minutes and 48.86 seconds (48.86s).
+14:51:22  
+14:51:22  Completed successfully
+14:51:22  
+14:51:22  Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+14:51:26  Running with dbt=1.11.2
+14:51:27  Registered adapter: postgres=1.10.0
+14:51:27  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:51:27  
+14:51:27  Concurrency: 4 threads (target='dev')
+14:51:27  
+14:51:27  1 of 1 START sql view model public.monthly_sales ............................... [RUN]
+14:51:28  1 of 1 OK created sql view model public.monthly_sales .......................... [CREATE VIEW in 0.14s]
+14:51:28  
+14:51:28  Finished running 1 view model in 0 hours 0 minutes and 0.35 seconds (0.35s).
+14:51:28  
+14:51:28  Completed successfully
+14:51:28  
+14:51:28  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:51:33  Running with dbt=1.11.2
+14:51:33  Registered adapter: postgres=1.10.0
+14:51:34  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:51:34  
+14:51:34  Concurrency: 4 threads (target='dev')
+14:51:34  
+14:51:34  1 of 1 START test s1_monthly_sum_equals_total .................................. [RUN]
+14:51:34  1 of 1 PASS s1_monthly_sum_equals_total ........................................ [PASS in 0.13s]
+14:51:34  
+14:51:34  Finished running 1 test in 0 hours 0 minutes and 0.33 seconds (0.33s).
+14:51:34  
+14:51:34  Completed successfully
+14:51:34  
+14:51:34  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:51:40  Running with dbt=1.11.2
+14:51:40  Registered adapter: postgres=1.10.0
+14:51:41  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:51:41  
+14:51:41  Concurrency: 4 threads (target='dev')
+14:51:41  
+14:51:41  1 of 3 START seed file public.customers ........................................ [RUN]
+14:51:41  2 of 3 START seed file public.products ......................................... [RUN]
+14:51:41  3 of 3 START seed file public.sales ............................................ [RUN]
+14:51:43  2 of 3 OK loaded seed file public.products ..................................... [CREATE 500 in 1.70s]
+14:51:44  1 of 3 OK loaded seed file public.customers .................................... [CREATE 2000 in 2.28s]
+14:52:31  3 of 3 OK loaded seed file public.sales ........................................ [CREATE 50000 in 49.92s]
+14:52:31  
+14:52:31  Finished running 3 seeds in 0 hours 0 minutes and 50.16 seconds (50.16s).
+14:52:31  
+14:52:31  Completed successfully
+14:52:31  
+14:52:31  Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+14:52:35  Running with dbt=1.11.2
+14:52:35  Registered adapter: postgres=1.10.0
+14:52:36  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:52:36  
+14:52:36  Concurrency: 4 threads (target='dev')
+14:52:36  
+14:52:36  1 of 1 START sql view model public.monthly_sales ............................... [RUN]
+14:52:36  1 of 1 OK created sql view model public.monthly_sales .......................... [CREATE VIEW in 0.10s]
+14:52:36  
+14:52:36  Finished running 1 view model in 0 hours 0 minutes and 0.30 seconds (0.30s).
+14:52:36  
+14:52:36  Completed successfully
+14:52:36  
+14:52:36  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:52:40  Running with dbt=1.11.2
+14:52:41  Registered adapter: postgres=1.10.0
+14:52:42  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:52:42  
+14:52:42  Concurrency: 4 threads (target='dev')
+14:52:42  
+14:52:42  1 of 1 START test s1_monthly_sum_equals_total .................................. [RUN]
+14:52:42  1 of 1 PASS s1_monthly_sum_equals_total ........................................ [PASS in 0.13s]
+14:52:42  
+14:52:42  Finished running 1 test in 0 hours 0 minutes and 0.35 seconds (0.35s).
+14:52:42  
+14:52:42  Completed successfully
+14:52:42  
+14:52:42  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:52:48  Running with dbt=1.11.2
+14:52:48  Registered adapter: postgres=1.10.0
+14:52:49  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:52:49  
+14:52:49  Concurrency: 4 threads (target='dev')
+14:52:49  
+14:52:49  1 of 3 START seed file public.customers ........................................ [RUN]
+14:52:49  2 of 3 START seed file public.products ......................................... [RUN]
+14:52:49  3 of 3 START seed file public.sales ............................................ [RUN]
+14:52:51  2 of 3 OK loaded seed file public.products ..................................... [CREATE 500 in 1.69s]
+14:52:51  1 of 3 OK loaded seed file public.customers .................................... [CREATE 2000 in 2.02s]
+14:53:38  3 of 3 OK loaded seed file public.sales ........................................ [CREATE 50000 in 49.00s]
+14:53:38  
+14:53:38  Finished running 3 seeds in 0 hours 0 minutes and 49.24 seconds (49.24s).
+14:53:38  
+14:53:38  Completed successfully
+14:53:38  
+14:53:38  Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+14:53:43  Running with dbt=1.11.2
+14:53:43  Registered adapter: postgres=1.10.0
+14:53:44  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:53:44  
+14:53:44  Concurrency: 4 threads (target='dev')
+14:53:44  
+14:53:44  1 of 1 START sql view model public.monthly_sales ............................... [RUN]
+14:53:44  1 of 1 OK created sql view model public.monthly_sales .......................... [CREATE VIEW in 0.12s]
+14:53:44  
+14:53:44  Finished running 1 view model in 0 hours 0 minutes and 0.34 seconds (0.34s).
+14:53:45  
+14:53:45  Completed successfully
+14:53:45  
+14:53:45  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+14:53:49  Running with dbt=1.11.2
+14:53:49  Registered adapter: postgres=1.10.0
+14:53:50  Found 1 model, 3 seeds, 4 data tests, 579 macros
+14:53:50  
+14:53:50  Concurrency: 4 threads (target='dev')
+14:53:50  
+14:53:50  1 of 1 START test s1_monthly_sum_equals_total .................................. [RUN]
+14:53:50  1 of 1 PASS s1_monthly_sum_equals_total ........................................ [PASS in 0.11s]
+14:53:50  
+14:53:50  Finished running 1 test in 0 hours 0 minutes and 0.30 seconds (0.30s).
+14:53:50  
+14:53:50  Completed successfully
+14:53:50  
+14:53:50  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+
+2025-12-24T17:53:53.5743957+03:00 END tool=dbt scenario=S1 duration_ms=1360526 duration_s=1360.526 exit_code=0

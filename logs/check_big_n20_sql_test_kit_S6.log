@@ -1,0 +1,23 @@
+﻿2025-12-24T19:17:53.5549210+03:00 START tool=sql_test_kit scenario=S6 remaining=20
+Scenario S6 passed.
+Scenario S6 passed.
+Scenario S6 passed.
+Scenario S6 passed.
+Scenario S6 passed.
+Scenario S6 passed.
+Scenario S6 passed.
+Scenario S6 passed.
+Scenario S6 passed.
+Scenario S6 passed.
+Scenario S6 passed.
+Scenario S6 passed.
+Scenario S6 passed.
+Scenario S6 passed.
+Scenario S6 passed.
+Scenario S6 passed.
+Scenario S6 passed.
+Scenario S6 passed.
+Scenario S6 passed.
+Scenario S6 passed.
+
+2025-12-24T19:23:17.6563817+03:00 END tool=sql_test_kit scenario=S6 duration_ms=324096 duration_s=324.097 exit_code=0

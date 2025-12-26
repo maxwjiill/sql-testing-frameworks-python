@@ -1,0 +1,23 @@
+﻿2025-12-24T18:27:55.0257216+03:00 START tool=sql_test_kit scenario=S2 remaining=20
+Scenario S2 passed.
+Scenario S2 passed.
+Scenario S2 passed.
+Scenario S2 passed.
+Scenario S2 passed.
+Scenario S2 passed.
+Scenario S2 passed.
+Scenario S2 passed.
+Scenario S2 passed.
+Scenario S2 passed.
+Scenario S2 passed.
+Scenario S2 passed.
+Scenario S2 passed.
+Scenario S2 passed.
+Scenario S2 passed.
+Scenario S2 passed.
+Scenario S2 passed.
+Scenario S2 passed.
+Scenario S2 passed.
+Scenario S2 passed.
+
+2025-12-24T18:33:15.1523930+03:00 END tool=sql_test_kit scenario=S2 duration_ms=320123 duration_s=320.124 exit_code=0

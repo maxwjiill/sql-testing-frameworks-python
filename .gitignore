@@ -1,0 +1,17 @@
+﻿.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+experiments/dbt_sales_aggregation/target/
+experiments/dbt_sales_aggregation/dbt_packages/
+experiments/dbt_sales_aggregation/logs/
+
+results/
+results/**
+
+.vscode/
+.DS_Store
+
+architecture.*

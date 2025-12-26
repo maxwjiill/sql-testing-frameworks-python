@@ -1,0 +1,43 @@
+﻿2025-12-24T18:34:22.6586141+03:00 START tool=pytest_testcontainers scenario=S4 remaining=20
+.                                                                        [100%]
+1 passed, 3 deselected in 23.59s
+.                                                                        [100%]
+1 passed, 3 deselected in 23.76s
+.                                                                        [100%]
+1 passed, 3 deselected in 23.72s
+.                                                                        [100%]
+1 passed, 3 deselected in 23.82s
+.                                                                        [100%]
+1 passed, 3 deselected in 23.67s
+.                                                                        [100%]
+1 passed, 3 deselected in 23.67s
+.                                                                        [100%]
+1 passed, 3 deselected in 23.77s
+.                                                                        [100%]
+1 passed, 3 deselected in 23.70s
+.                                                                        [100%]
+1 passed, 3 deselected in 23.79s
+.                                                                        [100%]
+1 passed, 3 deselected in 23.72s
+.                                                                        [100%]
+1 passed, 3 deselected in 23.73s
+.                                                                        [100%]
+1 passed, 3 deselected in 23.55s
+.                                                                        [100%]
+1 passed, 3 deselected in 23.64s
+.                                                                        [100%]
+1 passed, 3 deselected in 23.90s
+.                                                                        [100%]
+1 passed, 3 deselected in 23.81s
+.                                                                        [100%]
+1 passed, 3 deselected in 23.64s
+.                                                                        [100%]
+1 passed, 3 deselected in 23.76s
+.                                                                        [100%]
+1 passed, 3 deselected in 23.80s
+.                                                                        [100%]
+1 passed, 3 deselected in 23.61s
+.                                                                        [100%]
+1 passed, 3 deselected in 23.75s
+
+2025-12-24T18:42:34.4912842+03:00 END tool=pytest_testcontainers scenario=S4 duration_ms=491827 duration_s=491.827 exit_code=0

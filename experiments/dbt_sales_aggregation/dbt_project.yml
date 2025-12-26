@@ -1,0 +1,43 @@
+name: "sales_aggregation"
+version: "1.0.0"
+config-version: 2
+
+profile: "sales_aggregation"
+model-paths: ["models"]
+seed-paths: ["seeds"]
+snapshot-paths: []
+test-paths: ["tests"]
+analysis-paths: []
+macro-paths: ["macros"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  sales_aggregation:
+    +materialized: view
+
+seeds:
+  sales_aggregation:
+    +quote_columns: false
+    sales:
+      +column_types:
+        sale_id: integer
+        sale_ts: timestamp
+        customer_id: integer
+        product_id: integer
+        qty: integer
+        price: numeric(10,2)
+        discount: numeric(5,2)
+    products:
+      +column_types:
+        product_id: integer
+        category: text
+        active: boolean
+    customers:
+      +column_types:
+        customer_id: integer
+        segment: text
+
+dispatch:
+  - macro_namespace: dbt_utils
+    search_order: ["dbt_utils", "dbt"]

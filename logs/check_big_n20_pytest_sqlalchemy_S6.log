@@ -1,0 +1,43 @@
+﻿2025-12-24T18:58:08.3552455+03:00 START tool=pytest_sqlalchemy scenario=S6 remaining=20
+.                                                                        [100%]
+1 passed, 3 deselected in 2.75s
+.                                                                        [100%]
+1 passed, 3 deselected in 2.71s
+.                                                                        [100%]
+1 passed, 3 deselected in 2.72s
+.                                                                        [100%]
+1 passed, 3 deselected in 2.70s
+.                                                                        [100%]
+1 passed, 3 deselected in 2.77s
+.                                                                        [100%]
+1 passed, 3 deselected in 2.72s
+.                                                                        [100%]
+1 passed, 3 deselected in 2.83s
+.                                                                        [100%]
+1 passed, 3 deselected in 2.71s
+.                                                                        [100%]
+1 passed, 3 deselected in 2.72s
+.                                                                        [100%]
+1 passed, 3 deselected in 2.70s
+.                                                                        [100%]
+1 passed, 3 deselected in 2.72s
+.                                                                        [100%]
+1 passed, 3 deselected in 2.74s
+.                                                                        [100%]
+1 passed, 3 deselected in 2.70s
+.                                                                        [100%]
+1 passed, 3 deselected in 2.72s
+.                                                                        [100%]
+1 passed, 3 deselected in 2.74s
+.                                                                        [100%]
+1 passed, 3 deselected in 2.72s
+.                                                                        [100%]
+1 passed, 3 deselected in 2.72s
+.                                                                        [100%]
+1 passed, 3 deselected in 2.70s
+.                                                                        [100%]
+1 passed, 3 deselected in 2.69s
+.                                                                        [100%]
+1 passed, 3 deselected in 2.73s
+
+2025-12-24T18:59:16.9322279+03:00 END tool=pytest_sqlalchemy scenario=S6 duration_ms=68572 duration_s=68.572 exit_code=0
