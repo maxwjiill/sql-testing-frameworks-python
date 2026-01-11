@@ -17,7 +17,7 @@ Compared approaches:
 ## Project structure
 
 - `experiments/` — implementations of the four approaches
-- `bench/` — PowerShell runners and result aggregation utilities
+- `bench/` — runners and result aggregation utilities
 - `data/input/` — input CSV files
 - `data/output/` — experiment outputs
 - `logs/` — run logs (global log and per-scenario logs)
