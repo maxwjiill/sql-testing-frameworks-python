@@ -183,7 +183,9 @@ def dataset_to_csv_rows(dataset: Dataset) -> dict[str, list[dict]]:
 
 
 def resolve_input_dir(scale: str) -> Path:
-    root = Path(__file__).resolve().parents[2] / "data" / "input"
+    import os
+    cwd = Path(os.getcwd())
+    root = cwd / "data" / "input"
     candidate = root / scale
     return candidate if candidate.is_dir() else root
 

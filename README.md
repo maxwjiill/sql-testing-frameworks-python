@@ -12,7 +12,7 @@ Compared approaches:
 ## Authors and contributors
 
 - **Maxim A. Metelkin** — main author, implementation and experiments
-- **Vladimir A. Parkhomenko** — advisor and contributor (Senior Lecturer)
+- **Vladimir A. Parkhomenko** — advisor, minor author (Senior Lecturer)
 
 ## Project structure
 

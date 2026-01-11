@@ -6,7 +6,7 @@ sales_aggregation:
       host: localhost
       user: test_user
       password: test_pass
-      port: 5432
+      port: 15432
       dbname: test_db
       schema: public
       threads: 4

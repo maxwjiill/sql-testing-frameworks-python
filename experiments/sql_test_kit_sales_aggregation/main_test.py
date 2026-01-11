@@ -23,7 +23,7 @@ from experiments.data_generator import DDL_STATEMENTS, DROP_STATEMENTS, resolve_
 
 DB_CFG = {
     "host": "localhost",
-    "port": 5432,
+    "port": 15432,
     "user": "test_user",
     "password": "test_pass",
     "dbname": "test_db",
